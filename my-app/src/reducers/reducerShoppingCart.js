@@ -1,8 +1,7 @@
-import { fieldTypes } from "../util/api";
+import { fieldTypes } from "../util/api"
 export const initialState = [];
   
 const reducerShoppingCart = (state = initialState, action) => {
-    console.log('action==', action)
     switch(action.type)
     {
         case fieldTypes.FETCH_SHOPPINGCART_SUCCESS:

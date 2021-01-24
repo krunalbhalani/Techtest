@@ -30,9 +30,6 @@ const TotalRow = styled.div`
     margin-top:10px;
 `;
 
-
-
-
 const ShoppingCartData = ({data, handlebasket}) => {
     const [basket,setBasket] = useState(data)
     const [open, setOpen] = useState(false);
@@ -75,7 +72,7 @@ const ShoppingCartData = ({data, handlebasket}) => {
         <div>
             {basket.length <= 0  &&
                 <MainBox>
-                    <span className="label">There are no items in the basket</span>
+                    <span id="noItem" className="label">There are no items in the basket</span>
                 </MainBox>
             }
 
@@ -83,10 +80,10 @@ const ShoppingCartData = ({data, handlebasket}) => {
             <div>    
                 <MainBox>
                     <ItemRow>
-                        <span className="info">Max quantity allow per item is 3</span>
+                        <span id="information" className="info">Max quantity allow per item is 3</span>
                     </ItemRow>
                     {basket.map((d) =>
-                    <ItemRow>
+                    <ItemRow key={d.SKU}>
                         <div className="col1">
                             <span className="textRow">{d.name}</span>
                         </div>
@@ -113,7 +110,7 @@ const ShoppingCartData = ({data, handlebasket}) => {
                             <a className="label" href="#" onClick={() => clearQuantity()}>Clear</a>
                         </div>
                         <div className="colbutton">
-                            <Button onClick={handleClickOpen} variant="contained" color="primary">Check Out ></Button>
+                            <Button id="checkout" onClick={handleClickOpen} variant="contained" color="primary">Check Out ></Button>
                         </div>
                     </TotalRow>
                 </MainBox>
