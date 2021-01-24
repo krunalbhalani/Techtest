@@ -1,0 +1,91 @@
+$backcolor: white;
+$greycolor: grey;
+$blackcolor: black;
+$organgecolor: #f17c18;
+$redcolor: red;
+
+body {
+   background-color:$backcolor;
+   padding:100px;
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid $greycolor;
+  border-radius: 4px;
+  height:30px;
+  box-sizing: border-box;
+  }
+  
+.col2{
+  width:30%;
+  display:flex;
+}
+  
+  
+.col1{
+  width:40%;
+  display:block;
+  padding-left:20px;
+  padding-right:10px;
+  margin-bottom:15px;
+}
+  
+.textRow {
+  color: $blackcolor; 
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+.labelTotal {
+  color: $blackcolor; 
+  font-weight: bold; 
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+  
+.label {
+  color: $greycolor; 
+  font-weight: bold; 
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif; 
+  text-decoration: none;
+}
+
+.info {
+  color: $redcolor; 
+  font-weight: bold; 
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+.col3{
+  width:20%;
+  display:block;
+  padding-left:10px;
+  padding-right:10px;
+  margin-bottom:15px;
+  text-align:right;
+  color: $organgecolor;
+  font-weight: bold;
+}
+
+.col4{
+  width:10%;
+  display:block;
+  padding-left:10px;
+  padding-right:10px;
+  margin-bottom:15px;
+}
+
+.colbutton{
+  width:30%;
+  display:block;
+  padding-left:10px;
+  padding-right:10px;
+  margin-bottom:15px;
+  text-align:right;
+}
