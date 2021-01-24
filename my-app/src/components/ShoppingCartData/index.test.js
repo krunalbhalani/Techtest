@@ -1,6 +1,6 @@
 import React from 'react'
 import ShoppingCartData from '.'
-import { shallow, mount } from 'enzyme'
+import { shallow } from 'enzyme'
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
  
